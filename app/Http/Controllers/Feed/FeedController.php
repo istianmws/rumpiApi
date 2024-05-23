@@ -100,7 +100,7 @@ class FeedController extends Controller
 
         return response([
             'message' => 'comment success'
-        ], 200);
+        ], 201);
     }
     public function getComments($feed_id){
         $comments = Comment::with('feed')->with('user')->whereFeedId($feed_id)->latest()->get();
