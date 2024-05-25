@@ -11,7 +11,7 @@
         },
         {
         "src": "/(.*)",
-        "dest": "/api/index.php"
+        "dest": "/res/index.php"
     }],
     "env": {
         "APP_ENV": "production",
