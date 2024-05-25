@@ -2,16 +2,16 @@
     "version": 2,
       "framework": null,
     "functions": {
-        "res/index.php": { "runtime": "vercel-php@0.6.1" }
+        "api/index.php": { "runtime": "vercel-php@0.6.1" }
     },
     "routes": [
         {
-            "src": "/api/(.*)",
+            "src": "/api/api/(.*)",
             "dest": "/routes/api.php"
         },
         {
         "src": "/(.*)",
-        "dest": "/res/index.php"
+        "dest": "/api/index.php"
     }],
     "env": {
         "APP_ENV": "production",
